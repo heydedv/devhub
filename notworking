@@ -1,0 +1,487 @@
+-- Instances: 38 | Scripts: 12 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- Workspace.AimBot
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[AimBot]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- Workspace.AimBot.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(35, 35, 35);
+G2L["2"]["Size"] = UDim2.new(0, 489, 0, 215);
+G2L["2"]["Position"] = UDim2.new(0.59205, 0, 0.56224, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- Workspace.AimBot.Frame.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0, 9);
+
+
+-- Workspace.AimBot.Frame.TextLabel
+G2L["4"] = Instance.new("TextLabel", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(35, 35, 35);
+G2L["4"]["TextSize"] = 25;
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/PermanentMarker.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["Size"] = UDim2.new(0, 122, 0, 33);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[Stupid Hub AimBot]];
+G2L["4"]["Position"] = UDim2.new(0.06953, 0, 0, 0);
+
+
+-- Workspace.AimBot.Frame.TextLabel.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+G2L["5"]["CornerRadius"] = UDim.new(0, 9);
+
+
+-- Workspace.AimBot.Frame.Close
+G2L["6"] = Instance.new("TextButton", G2L["2"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(35, 35, 35);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/PermanentMarker.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["RichText"] = true;
+G2L["6"]["Size"] = UDim2.new(0, 40, 0, 32);
+G2L["6"]["Name"] = [[Close]];
+G2L["6"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["6"]["Text"] = [[X]];
+G2L["6"]["Position"] = UDim2.new(0.91653, 0, 0, 0);
+
+
+-- Workspace.AimBot.Frame.Close.LocalScript
+G2L["7"] = Instance.new("LocalScript", G2L["6"]);
+
+
+
+-- Workspace.AimBot.Frame.Close.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["6"]);
+G2L["8"]["CornerRadius"] = UDim.new(0, 9);
+
+
+-- Workspace.AimBot.Frame.DragScript
+G2L["9"] = Instance.new("LocalScript", G2L["2"]);
+G2L["9"]["Name"] = [[DragScript]];
+
+
+-- Workspace.AimBot.Frame.disable
+G2L["a"] = Instance.new("TextButton", G2L["2"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0, 22, 0, 24);
+G2L["a"]["Name"] = [[disable]];
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[]];
+G2L["a"]["Position"] = UDim2.new(0.01227, 0, 0.87442, 0);
+
+
+-- Workspace.AimBot.Frame.disable.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["a"]);
+G2L["b"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- Workspace.AimBot.Frame.disable.LocalScript222
+G2L["c"] = Instance.new("LocalScript", G2L["a"]);
+G2L["c"]["Name"] = [[LocalScript222]];
+
+
+-- Workspace.AimBot.Frame.enable
+G2L["d"] = Instance.new("TextButton", G2L["2"]);
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["TextSize"] = 14;
+G2L["d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(48, 255, 0);
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["Size"] = UDim2.new(0, 22, 0, 24);
+G2L["d"]["Name"] = [[enable]];
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[]];
+G2L["d"]["Position"] = UDim2.new(0.01227, 0, 0.87442, 0);
+
+
+-- Workspace.AimBot.Frame.enable.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["d"]);
+G2L["e"]["CornerRadius"] = UDim.new(1, 0);
+
+
+-- Workspace.AimBot.Frame.enable.LocalScript333
+G2L["f"] = Instance.new("LocalScript", G2L["d"]);
+G2L["f"]["Name"] = [[LocalScript333]];
+
+
+-- Workspace.AimBot.Frame.smoothing
+G2L["10"] = Instance.new("TextButton", G2L["2"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/PermanentMarker.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["RichText"] = true;
+G2L["10"]["Size"] = UDim2.new(0, 121, 0, 27);
+G2L["10"]["Name"] = [[smoothing]];
+G2L["10"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["10"]["Text"] = [[SMOOTHING (0-1)]];
+G2L["10"]["Position"] = UDim2.new(0.21268, 0, 0.43256, 0);
+
+
+-- Workspace.AimBot.Frame.smoothing.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["10"]);
+G2L["11"]["CornerRadius"] = UDim.new(0, 4);
+
+
+-- Workspace.AimBot.Frame.smoothing.smooth
+G2L["12"] = Instance.new("LocalScript", G2L["10"]);
+G2L["12"]["Name"] = [[smooth]];
+
+
+-- Workspace.AimBot.Frame.fov textbox
+G2L["13"] = Instance.new("TextBox", G2L["2"]);
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["Name"] = [[fov textbox]];
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/PermanentMarker.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["Size"] = UDim2.new(0, 160, 0, 27);
+G2L["13"]["Position"] = UDim2.new(0.46012, 0, 0.24651, 0);
+G2L["13"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["Text"] = [[]];
+
+
+-- Workspace.AimBot.Frame.fov textbox.UICorner
+G2L["14"] = Instance.new("UICorner", G2L["13"]);
+G2L["14"]["CornerRadius"] = UDim.new(0, 9);
+
+
+-- Workspace.AimBot.Frame.fov textbox.fovstextbox
+G2L["15"] = Instance.new("LocalScript", G2L["13"]);
+G2L["15"]["Name"] = [[fovstextbox]];
+
+
+-- Workspace.AimBot.Frame.fov
+G2L["16"] = Instance.new("TextButton", G2L["2"]);
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["TextScaled"] = true;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/PermanentMarker.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["RichText"] = true;
+G2L["16"]["Size"] = UDim2.new(0, 121, 0, 27);
+G2L["16"]["Name"] = [[fov]];
+G2L["16"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["16"]["Text"] = [[FOV (50-120)]];
+G2L["16"]["Position"] = UDim2.new(0.21268, 0, 0.24651, 0);
+
+
+-- Workspace.AimBot.Frame.fov.UICorner
+G2L["17"] = Instance.new("UICorner", G2L["16"]);
+G2L["17"]["CornerRadius"] = UDim.new(0, 4);
+
+
+-- Workspace.AimBot.Frame.fov.fovs
+G2L["18"] = Instance.new("LocalScript", G2L["16"]);
+G2L["18"]["Name"] = [[fovs]];
+
+
+-- Workspace.AimBot.Frame.prediction
+G2L["19"] = Instance.new("TextButton", G2L["2"]);
+G2L["19"]["TextWrapped"] = true;
+G2L["19"]["TextSize"] = 14;
+G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19"]["TextScaled"] = true;
+G2L["19"]["BackgroundColor3"] = Color3.fromRGB(26, 26, 26);
+G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/PermanentMarker.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19"]["RichText"] = true;
+G2L["19"]["Size"] = UDim2.new(0, 121, 0, 27);
+G2L["19"]["Name"] = [[prediction]];
+G2L["19"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["19"]["Text"] = [[PREDICTION (0-1)]];
+G2L["19"]["Position"] = UDim2.new(0.21268, 0, 0.62791, 0);
+
+
+-- Workspace.AimBot.Frame.prediction.UICorner
+G2L["1a"] = Instance.new("UICorner", G2L["19"]);
+G2L["1a"]["CornerRadius"] = UDim.new(0, 4);
+
+
+-- Workspace.AimBot.Frame.prediction.pred
+G2L["1b"] = Instance.new("LocalScript", G2L["19"]);
+G2L["1b"]["Name"] = [[pred]];
+
+
+-- Workspace.AimBot.Frame.smoothing textbox
+G2L["1c"] = Instance.new("TextBox", G2L["2"]);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["Name"] = [[smoothing textbox]];
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/PermanentMarker.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["Size"] = UDim2.new(0, 160, 0, 27);
+G2L["1c"]["Position"] = UDim2.new(0.46012, 0, 0.43256, 0);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["Text"] = [[]];
+
+
+-- Workspace.AimBot.Frame.smoothing textbox.UICorner
+G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
+G2L["1d"]["CornerRadius"] = UDim.new(0, 9);
+
+
+-- Workspace.AimBot.Frame.smoothing textbox.smoothtextbox
+G2L["1e"] = Instance.new("LocalScript", G2L["1c"]);
+G2L["1e"]["Name"] = [[smoothtextbox]];
+
+
+-- Workspace.AimBot.Frame.prediction  textbox
+G2L["1f"] = Instance.new("TextBox", G2L["2"]);
+G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["Name"] = [[prediction  textbox]];
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/PermanentMarker.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f"]["Size"] = UDim2.new(0, 160, 0, 27);
+G2L["1f"]["Position"] = UDim2.new(0.46012, 0, 0.62791, 0);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["Text"] = [[]];
+
+
+-- Workspace.AimBot.Frame.prediction  textbox.UICorner
+G2L["20"] = Instance.new("UICorner", G2L["1f"]);
+G2L["20"]["CornerRadius"] = UDim.new(0, 9);
+
+
+-- Workspace.AimBot.Frame.prediction  textbox.predtextbox
+G2L["21"] = Instance.new("LocalScript", G2L["1f"]);
+G2L["21"]["Name"] = [[predtextbox]];
+
+
+-- Workspace.AimBot.Frame.GlowingLabel
+G2L["22"] = Instance.new("TextLabel", G2L["2"]);
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Size"] = UDim2.new(0, 489, 0, 3);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[]];
+G2L["22"]["Name"] = [[GlowingLabel]];
+G2L["22"]["Position"] = UDim2.new(0, 0, 0.20787, 0);
+
+
+-- Workspace.AimBot.Open
+G2L["23"] = Instance.new("TextButton", G2L["1"]);
+G2L["23"]["TextWrapped"] = true;
+G2L["23"]["TextSize"] = 14;
+G2L["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["TextScaled"] = true;
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(35, 35, 35);
+G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/PermanentMarker.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["23"]["RichText"] = true;
+G2L["23"]["Size"] = UDim2.new(0, 30, 0, 32);
+G2L["23"]["Name"] = [[Open]];
+G2L["23"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["23"]["Text"] = [[-]];
+G2L["23"]["Position"] = UDim2.new(0.03101, 0, 0.94473, 0);
+
+
+-- Workspace.AimBot.Open.LocalScript
+G2L["24"] = Instance.new("LocalScript", G2L["23"]);
+
+
+
+-- Workspace.AimBot.Open.UICorner
+G2L["25"] = Instance.new("UICorner", G2L["23"]);
+G2L["25"]["CornerRadius"] = UDim.new(0, 9);
+
+
+-- Workspace.AimBot.LocalScript
+G2L["26"] = Instance.new("LocalScript", G2L["1"]);
+
+
+
+-- Workspace.AimBot.Frame.Close.LocalScript
+local function C_7()
+local script = G2L["7"];
+	local Frame = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Frame.Visible = false
+	end)
+end;
+task.spawn(C_7);
+-- Workspace.AimBot.Frame.DragScript
+local function C_9()
+local script = G2L["9"];
+	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	--Put this inside of your Frame and configure the speed if you would like.
+	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end;
+task.spawn(C_9);
+-- Workspace.AimBot.Frame.disable.LocalScript222
+local function C_c()
+local script = G2L["c"];
+	print "this is the script for disable button"
+	print "remember, the script disable by default"
+end;
+task.spawn(C_c);
+-- Workspace.AimBot.Frame.enable.LocalScript333
+local function C_f()
+local script = G2L["f"];
+	print "this is the script for enable button"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/slinax-dev/stupidhubaimbot/refs/heads/main/aimbot"))()
+	
+	
+end;
+task.spawn(C_f);
+-- Workspace.AimBot.Frame.smoothing.smooth
+local function C_12()
+local script = G2L["12"];
+	print "this is the script for (smooth) button"
+	print "remember if player made changes in (smoothtextbox) and hit this button you need to apply changes"
+end;
+task.spawn(C_12);
+-- Workspace.AimBot.Frame.fov textbox.fovstextbox
+local function C_15()
+local script = G2L["15"];
+	print "this is the script for fovtextbox, where the player typing amount of fov (it is from 50 to 120)"
+	print "remember player made changes for this, player must hit (fovs) button to apply changes"
+	
+end;
+task.spawn(C_15);
+-- Workspace.AimBot.Frame.fov.fovs
+local function C_18()
+local script = G2L["18"];
+	print "this is the script for (fovs) button"
+	print "remember if player made changes in (fovstextbox) and hit this button you need to apply changes"
+end;
+task.spawn(C_18);
+-- Workspace.AimBot.Frame.prediction.pred
+local function C_1b()
+local script = G2L["1b"];
+	print "this is the script for (pred) button"
+	print "remember if player made changes in (predtextbox) and hit this button you need to apply changes"
+end;
+task.spawn(C_1b);
+-- Workspace.AimBot.Frame.smoothing textbox.smoothtextbox
+local function C_1e()
+local script = G2L["1e"];
+	print "this is the script for smoothtextbpx, where the player typing amount of smoothing(it is from 0 to 1, for example 0.3 can also be )"
+	print "remember player made changes for this, player must hit (smooth) button to apply changes"
+	
+end;
+task.spawn(C_1e);
+-- Workspace.AimBot.Frame.prediction  textbox.predtextbox
+local function C_21()
+local script = G2L["21"];
+	print "this is the script for predtextbox, where the player typing amount of prediction(it is from 0 to 1, for example 0.3 can also be )"
+	print "remember player made changes for this, player must hit (pred) button to apply changes"
+	
+end;
+task.spawn(C_21);
+-- Workspace.AimBot.Open.LocalScript
+local function C_24()
+local script = G2L["24"];
+	local button = script.Parent -- Assuming the script is a child of the button
+	local Frame = script.Parent.Parent.Frame
+	
+	-- Function to check visibility and update button
+	local function updateButtonVisibility()
+		if Frame.Visible then
+			button.Visible = false
+		else
+			button.Visible = true
+		end
+	end
+	
+	-- Connect the function to the Frame's Changed event
+	Frame:GetPropertyChangedSignal("Visible"):Connect(updateButtonVisibility)
+	
+	-- Initial check
+	updateButtonVisibility()
+	
+	-- Make the Frame visible when the button is clicked
+	button.MouseButton1Click:Connect(function()
+		Frame.Visible = true
+	end)
+	
+end;
+task.spawn(C_24);
+-- Workspace.AimBot.LocalScript
+local function C_26()
+local script = G2L["26"];
+	-- Place this LocalScript inside the RainbowGlowGui
+	
+	local TextLabel = script.Parent.Frame.GlowingLabel
+	
+	-- Create the UIGradient instance
+	local gradient = Instance.new("UIGradient")
+	gradient.Rotation = 45
+	gradient.Parent = TextLabel
+	
+	-- Function to update the gradient color over time
+	local function updateGradient()
+		local time = tick()
+		gradient.Color = ColorSequence.new({
+			ColorSequenceKeypoint.new(0, Color3.fromHSV(time % 1, 1, 1)),
+			
+			
+			ColorSequenceKeypoint.new(1, Color3.fromHSV((time + 1) % 1, 1, 1))
+		})
+	end
+	
+	-- Continuously update the gradient color
+	game:GetService("RunService").RenderStepped:Connect(updateGradient)
+	
+	
+	
+end;
+task.spawn(C_26);
+
+return G2L["1"], require;
